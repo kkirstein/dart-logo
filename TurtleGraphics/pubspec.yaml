@@ -1,0 +1,7 @@
+name: TurtleGraphics
+version: 0.0.1
+description: Interactive turtle graphics
+dependencies:
+  angular: any
+  browser: any
+  shadow_dom: any

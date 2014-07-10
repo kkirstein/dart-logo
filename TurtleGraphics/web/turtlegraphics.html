@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TurtleGraphics</title>
+    
+    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
+    <script async type="application/dart" src="turtlegraphics.dart"></script>
+    <script async src="packages/browser/dart.js"></script>
+    
+    <link rel="stylesheet" href="turtlegraphics.css">
+  </head>
+  <body>
+    <div turtle-gui>
+      <h1>TurtleGraphics</h1>
+    
+      <div id="canvas-panel">
+        <canvas id="turtle-canvas" width="ctrl.width" height="height"></canvas>
+      </div>
+    
+      <div id="command-panel">
+      
+      </div>
+    </div>
+    
+  </body>
+</html>
