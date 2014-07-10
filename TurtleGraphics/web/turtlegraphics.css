@@ -23,6 +23,7 @@ body div {
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  flex: 1;
 }
 
 #command-panel {
