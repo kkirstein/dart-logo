@@ -1,4 +1,4 @@
-name: TurtleGraphics
+name: turtle_graphics
 version: 0.0.1
 description: Interactive turtle graphics
 dependencies:
