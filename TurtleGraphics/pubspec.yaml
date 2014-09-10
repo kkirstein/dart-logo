@@ -2,6 +2,6 @@ name: turtle_graphics
 version: 0.0.1
 description: Interactive turtle graphics
 dependencies:
-  angular: any
+  angular: '>=0.10.0 <0.13.0'
   browser: any
   shadow_dom: any
