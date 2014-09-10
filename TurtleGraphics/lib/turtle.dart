@@ -13,8 +13,8 @@ class Turtle extends CanvasDraw {
 
   // constructor
   Turtle(CanvasRenderingContext2D ctx) : super(ctx) {
-    x = 0;
-    y = 0;
+    x = ctx.canvas.width ~/ 2;
+    y = ctx.canvas.height ~/ 2;
     penDown = true;
     penColor = "#000000";
   }
@@ -38,10 +38,17 @@ class Turtle extends CanvasDraw {
     direction -= deg;
   }
 
+  void show() {
+    _drawTurtle();
+  }
+  
   // private methods
   int _wrapAroundDirection(int value) {
     while (value > 360) value -= 360;
     return value;
   }
 
+  void _drawTurtle() {
+    line(x, y, x-10, y-10, penColor);
+  }
 }

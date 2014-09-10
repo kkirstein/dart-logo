@@ -37,8 +37,11 @@ class TurtleGraphicsController {
   void _paint() {
     var cd = new CanvasDraw((document.querySelector("#turtle-canvas") as CanvasElement).context2D);
     
-    cd.line(0, 0, 300, 150);
-    cd.line(400, 300, 250, 150, "#FF0000");
+    var turtle = new Turtle((document.querySelector("#turtle-canvas") as CanvasElement).context2D);
+    turtle.show();
+    
+//    cd.line(0, 0, 300, 150);
+//    cd.line(400, 300, 250, 150, "#FF0000");
   }
 }
 
@@ -48,7 +51,7 @@ class TurtleGraphicsModule extends Module {
    * constructor
    */
   TurtleGraphicsModule() {
-    type(TurtleGraphicsController);
+    bind(TurtleGraphicsController);
   }
 }
 
