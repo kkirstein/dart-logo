@@ -11,6 +11,7 @@
     <script src="packages/web_components/dart_support.js"></script>
     
     <!-- import polymer elements -->
+    <link rel="import" href="tg_canvas.html">
     
     <link rel="stylesheet" href="turtlegraphics.css">
   </head>
@@ -18,9 +19,12 @@
     <div id="turtle-gui">
       <h1>TurtleGraphics</h1>
     
+      <!--
       <div id="canvas-panel">
         <canvas id="turtle-canvas" width="800" height="600"></canvas>
       </div>
+       -->
+      <tg-canvas width="800" height="600"></tg-canvas>
     
       <div id="command-panel">
       

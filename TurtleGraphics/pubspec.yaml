@@ -3,3 +3,7 @@ version: 0.0.2
 description: Interactive turtle graphics
 dependencies:
   polymer: '>=0.14.0 <0.15.0'
+transformers:
+- polymer:
+    entry_points: web/turtlegraphics.html
+ 

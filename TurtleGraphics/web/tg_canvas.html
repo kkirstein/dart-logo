@@ -1,0 +1,21 @@
+<!-- tg_canvas.html polymer element containing the drawing canvas of turtle graohics -->
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="tg-canvas" attributes="width height">
+  <template>
+    <style>
+      :host div {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+    <div>
+      <canvas id="turtle-canvas" width={{width}} height={{height}}></canvas>
+    </div>
+  </template>
+  
+  <script type="application/dart" src="tg_canvas.dart"></script>
+  
+</polymer-element>
