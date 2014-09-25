@@ -49,6 +49,10 @@ class Turtle extends CanvasDraw {
   }
 
   void _drawTurtle() {
-    line(x, y, x-10, y-10, penColor);
+    var size = 10;
+    line(x, y, x+size, y+size, penColor);
+    line(x+size, y+size, x, y-2*size, penColor);
+    line(x, y-2*size, x-size, y+size, penColor);
+    line(x-size, y+size, x, y, penColor);
   }
 }
