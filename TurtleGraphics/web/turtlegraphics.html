@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 
-<html ng-app>
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TurtleGraphics</title>
     
-    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
-    <script async type="application/dart" src="turtlegraphics.dart"></script>
-    <script async src="packages/browser/dart.js"></script>
+    <!-- include the web_components polyfills with support for Dart -->
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    
+    <!-- import polymer elements -->
     
     <link rel="stylesheet" href="turtlegraphics.css">
   </head>
   <body>
-    <div turtle-gui>
+    <div id="turtle-gui">
       <h1>TurtleGraphics</h1>
     
       <div id="canvas-panel">
@@ -24,6 +26,10 @@
       
       </div>
     </div>
+
+    <!-- bootstrap polymer -->
+    <script type="application/dart">export 'package:polymer/init.dart';</script>    
+    <script src="packages/browser/dart.js"></script>
     
   </body>
 </html>

@@ -2,17 +2,11 @@ library turtle_gui;
 
 import 'dart:html';
 
-import 'package:angular/angular.dart';
-import 'package:angular/application_factory.dart';
-
 import 'package:turtle_graphics/turtlecanvas.dart';
 
 /**
- * GIU controller for interactive TurtleGraphics
+ * GUI controller for interactive TurtleGraphics
  */
-@Controller(
-    selector: '[turtle-gui]',
-    publishAs: 'ctrl')
 class TurtleGraphicsController {
 
   // public properties
@@ -43,21 +37,4 @@ class TurtleGraphicsController {
 //    cd.line(0, 0, 300, 150);
 //    cd.line(400, 300, 250, 150, "#FF0000");
   }
-}
-
-class TurtleGraphicsModule extends Module {
-
-  /**
-   * constructor
-   */
-  TurtleGraphicsModule() {
-    bind(TurtleGraphicsController);
-  }
-}
-
-/**
- * main entry point
- */
-void main() {
-  applicationFactory().addModule(new TurtleGraphicsModule()).run();
 }
