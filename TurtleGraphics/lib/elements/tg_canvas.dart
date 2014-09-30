@@ -3,9 +3,9 @@ import 'package:polymer/polymer.dart';
 @CustomTag('tg-canvas')
 class TgCanvas extends PolymerElement {
 
-  // observable properties
-  @observable int width;
-  @observable int height;
+  // published properties (2-way binding)
+  @published int width;
+  @published int height;
   
   // constructor
   TgCanvas.created() : super.created();
