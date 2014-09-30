@@ -6,3 +6,4 @@ import 'dart:html';
 // library parts
 part 'canvas_draw.dart';
 part 'turtle.dart';
+part 'turtlestep.dart';
