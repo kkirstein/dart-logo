@@ -23,6 +23,10 @@ class Turtle extends CanvasDraw {
   set direction(int value) => _direction = _wrapAroundDirection(value);
 
   // public methods
+  void applyStep(TurtleStep step) {
+    // TODO
+  }
+  
   void forward(int steps) {
     // TODO
   }
@@ -40,6 +44,12 @@ class Turtle extends CanvasDraw {
 
   void show() {
     _drawTurtle();
+  }
+  
+  // for debugging & demo purpose
+  void demo() {
+    show();
+    
   }
   
   // private methods
